@@ -4,13 +4,17 @@
   "description": "",
   "scripts": {
     "build": "tsc",
+    "coverage": "jest --coverage",
     "dev": "nodemon ./src/index.ts",
-    "start": "node ./dist"
+    "lint": "eslint ./src/**.ts ./tests/**.ts",
+    "start": "node ./dist",
+    "test": "jest"
   },
   "keywords": [],
   "author": "SLIB53",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^26.0.16",
     "@types/node": "^14.14.10",
     "@typescript-eslint/eslint-plugin": "^4.9.1",
     "@typescript-eslint/parser": "^4.9.1",
@@ -19,7 +23,9 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
+    "jest": "^26.6.3",
     "nodemon": "^2.0.6",
+    "ts-jest": "^26.4.4",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.2"
   }
